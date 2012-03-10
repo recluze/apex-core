@@ -21,7 +21,10 @@ import org.csrdu.apex.helpers.Log;
 
 public class AccessManager {
 	private String TAG = "APEX:AccessManager";
-	private String permDirectory = "/system/etc/apex/perms/";
+	
+	// TODO: Fix before incorporation in AOSP
+	// private String permDirectory = "/system/etc/apex/perms/";
+	private String permDirectory = "policies/";
 
 	private HashMap<String, ApexPackagePolicy> packagePolicies = new HashMap<String, ApexPackagePolicy>();
 	private AttributeManager attributeManager;

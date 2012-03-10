@@ -22,7 +22,9 @@ import java.util.StringTokenizer;
 import org.csrdu.apex.helpers.Log;
 
 public class AttributeManager {
-	private static String attributesDirectory = "/system/etc/apex/attribs/";
+	// TODO: Fix before incorporation in AOSP
+	// private static String attributesDirectory = "/system/etc/apex/attribs/";
+	private static String attributesDirectory = "policies/attribs/";
 	private static AttributeManager _singletonInstance;
 	private static String TAG = "APEX:AttributeManager";
 
