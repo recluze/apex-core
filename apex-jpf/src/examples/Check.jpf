@@ -1,0 +1,5 @@
+target = Check
+
+listener=org.csrdu.apex.jpf.ApexRaceDetector
+
+report.console.property_violation=error,trace

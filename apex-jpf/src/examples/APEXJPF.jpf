@@ -1,0 +1,16 @@
+target = org.csrdu.apex.helpers.Runner
+#listener=org.csrdu.apex.jpf.ApexListener
+#listener=org.csrdu.apex.jpf.AccessSharedMemory
+#listener=gov.nasa.jpf.listener.SimpleDot
+#listener=org.csrdu.apex.jpf.ApexRaceListener
+listener=gov.nasa.jpf.listener.PreciseRaceDetector
+#listener=gov.nasa.jpf.listener.SearchStats
+
+#report.console.property_violation=error,trace,snapshot
+#listener=.listener.DeadlockAnalyzer
+#deadlock.format=essential
+#jpf.stack_tracker.log_period=5000
+#include=race.exclude
+##search.properties=\
+##org.csrdu.apex.jpf.ApexListener:\
+##org.csrdu.apex.jpf.ApexRaceDetector

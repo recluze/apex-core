@@ -1,0 +1,5 @@
+target = DeadLockDemo
+
+listener=gov.nasa.jpf.listener.PreciseRaceDetector
+
+report.console.property_violation=error,trace

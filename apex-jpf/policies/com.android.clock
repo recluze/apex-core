@@ -1,0 +1,11 @@
+<Policies>
+  <Policy Effect="Deny">
+    <Permission Name="android.permission.WRITE_SETTINGS" />
+    <Constraint CombiningAlgorithm="org.csrdu.apex.combiningalgorithms.All">
+     <Expression FunctionId='org.csrdu.apex.functions.StringEquals'>
+       <Constant Value='true' />
+       <ApplicationAttribute AttributeName='dummyattrib' Default='true' />
+     </Expression>
+    </Constraint>
+  </Policy>
+</Policies>
